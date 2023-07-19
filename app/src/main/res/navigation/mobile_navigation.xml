@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_activity"
+        android:name="com.example.wiri.ui.Activity_screen.Activity_screen"
+        android:label="@string/menu_activity"
+        tools:layout="@layout/fragment_activity_screen" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.wiri.ui.Home_screem.Home_screen"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home_screen" />
+
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.example.wiri.ui.Notifications_screen.Notifications_screen"
+        android:label="@string/menu_notifications"
+        tools:layout="@layout/fragment_notifications_screen" />
+</navigation>

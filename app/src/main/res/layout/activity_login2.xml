@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F5F6"
+    android:backgroundTint="#101010"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/textView8"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="203dp"
+        android:layout_marginBottom="200dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.286"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097"
+        app:srcCompat="@drawable/cleveland_auto_show_car_logo_png_25"
+        tools:srcCompat="@drawable/cleveland_auto_show_car_logo_png_25" />
+
+    <Button
+        android:id="@+id/login1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="40dp"
+        android:background="#E11111"
+        android:backgroundTint="#F30808"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:dividerPadding="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/login1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerPadding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:text="Username"
+                android:textColor="#FAF1F1"
+                android:textColorLink="#E6DDDD"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#ECF2F3"
+                android:backgroundTint="#EFF4F6"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#131313" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:text="Password"
+                android:textColor="#FAF3F3"
+                android:textSize="30dp" />
+
+            <EditText
+
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#ECF2F3"
+                android:backgroundTint="#EFF4F6"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:textColor="#1B1A1A" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1096351002298",
+    "project_id": "wirin-a2809",
+    "storage_bucket": "wirin-a2809.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096351002298:android:547979030c6206297d1c83",
+        "android_client_info": {
+          "package_name": "com.example.wiri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096351002298-1v59t8u7p0u31b15r7jlnj16qtkfq7pa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzI6cP1C8s1sp6-rE-WYsPAz4Jfwf3CIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096351002298-1v59t8u7p0u31b15r7jlnj16qtkfq7pa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

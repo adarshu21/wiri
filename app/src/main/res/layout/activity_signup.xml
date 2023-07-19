@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F3F3"
+    android:backgroundTint="#0C0C0C"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="600dp"
+        android:text="Signup"
+        android:textColor="#F10808"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        android:dividerPadding="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/signup1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.237">
+
+        <TableRow
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:dividerPadding="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="1dp"
+                android:paddingRight="1dp"
+                android:text="Email"
+                android:textColor="#FAF6F6"
+                android:textSize="30dp" />
+
+            <EditText
+
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#ECF2F3"
+                android:backgroundTint="#EFF4F6"
+                android:ems="10"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="1dp"
+                android:paddingRight="1dp"
+                android:text="Password"
+                android:textColor="#F3EFEF"
+                android:textSize="30dp" />
+
+            <EditText
+
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#ECF2F3"
+                android:backgroundTint="#EFF4F6"
+                android:ems="10"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="1dp"
+                android:paddingRight="1dp"
+                android:text="Confirm"
+                android:textColor="#F3F0F0"
+                android:textSize="30dp" />
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#ECF2F3"
+                android:backgroundTint="#EFF4F6"
+                android:ems="10"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="1dp"
+                android:paddingRight="1dp"
+                android:text="Phone"
+                android:textColor="#F6F1F1"
+                android:textSize="30dp" />
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#ECF2F3"
+                android:backgroundTint="#EFF4F6"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="52dp"
+        android:background="#121111"
+        android:backgroundTint="#101010"
+        android:paddingTop="20dp"
+        android:text="Submit"
+        android:textColor="#F30B0B"
+        android:textColorHighlight="#E10C0C"
+        android:textColorHint="#EF0E0E"
+        android:textColorLink="#ECE4E4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="173dp"
+        android:background="#FFEB3B"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+        app:srcCompat="@drawable/ic_baseline_mail_24" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="10dp"
+        android:text="sign up with google instead"
+        android:textAlignment="center"
+        android:textColor="#00BCD4"
+        android:textColorLink="#AEA7A7"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/signup1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
